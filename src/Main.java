@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Main {
-    private static final String MAINFILE = "/home/neox/Desktop/doc/IdeaProjects/ActiveVocabulary/maintext";
-    private static final String FILE_1 = "/home/neox/Desktop/doc/IdeaProjects/ActiveVocabulary/list1";
-    private static final String FILE_2 = "/home/neox/Desktop/doc/IdeaProjects/ActiveVocabulary/list2";
-    private static final String FILE_3 = "/home/neox/Desktop/doc/IdeaProjects/ActiveVocabulary/list3";
+    private static final String MAINFILE = "/home/Ubuntu/IdeaProjects/ActiveVocabulary/maintext";
+    private static final String FILE_1 = "/home/Ubuntu/IdeaProjects/ActiveVocabulary/list1";
+    private static final String FILE_2 = "/home/Ubuntu/IdeaProjects/ActiveVocabulary/list2";
+    private static final String FILE_3 = "/home/Ubuntu/IdeaProjects/ActiveVocabulary/list3";
 
     private static void showMenu() {
         System.out.println("|===========================|");
@@ -32,7 +32,7 @@ public class Main {
         label:
         for (; ; ) {
             Word obj = new Word();
-            obj.readWordFromFile("/home/ubuntu/IdeaProjects/LearningWords/maintext");
+            obj.readMainFile("/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext");
             do {
                 showMenu();
                 System.out.print("input your choice: ");
@@ -52,14 +52,14 @@ public class Main {
                         do {
                             System.out.println("input new words...");
                             System.out.println("for queit press 'esc'");
-                            list = obj.writeWordInLinkedList();
-                            obj.writeWordInFile(list, FILE_1);
+                           // list = obj.writeWordInLinkedList();
+                           // obj.writeWordInFile(list, FILE_1);
                             key = System.in.read();
                         } while (key != 27);
                         break;
                     case '3':
                         System.out.println("show all words");
-                        obj.readWordFromFile(FILE_1);
+                       // obj.readWordFromFile(FILE_1);
                         break;
                     case 'q':
                         System.out.println("quiet");

@@ -43,9 +43,23 @@ public class Word implements Serializable {
     public void setPriority(int priority) {
         this.priority = priority;
     }
-    LinkedList <Word> readMainFile (String filepath){
+    // reading mainfile lite by line
+    void readMainFile(String filepath) {
+        BufferedReader reader;
+        try {
+            reader = new BufferedReader(new FileReader("/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext"));
+            String line = reader.readLine();
+            while (line != null) {
 
-        return
+                System.out.println(line);
+                // read next line
+                line = reader.readLine();
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
 
