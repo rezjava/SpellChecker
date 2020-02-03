@@ -43,16 +43,32 @@ public class Word implements Serializable {
     public void setPriority(int priority) {
         this.priority = priority;
     }
-    // reading mainfile lite by line
+    // reading mainfile lite by line and writing lines to LinkedList into file
     void readMainFile(String filepath) {
-        BufferedReader reader;
+        LinkedList<Word> listOfWords = new  LinkedList<Word>();
+        BufferedReader reader = null;
+        BufferedWriter writer = null;
         try {
             reader = new BufferedReader(new FileReader("/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext"));
+            writer = new BufferedWriter(new FileWriter("/home/ubuntu/IdeaProjects/ActiveVocabulary/list1"));
             String line = reader.readLine();
+            String ew = "";
+            String rw = "";
             while (line != null) {
 
-                System.out.println(line);
-                // read next line
+                for (int i = 0; i < line.length(); i++) {
+                    if (line.charAt(i) != '#') ew = ew + line.charAt(i);
+                    else
+                        continue;
+                        rw = rw + line.charAt(i);
+                }
+
+
+               // System.out.println("english word is " + ew);
+               //  System.out.println("russion word is " + rw);
+
+
+
                 line = reader.readLine();
             }
             reader.close();
