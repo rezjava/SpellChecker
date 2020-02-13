@@ -43,9 +43,10 @@ public class Word implements Serializable {
     public void setPriority(int priority) {
         this.priority = priority;
     }
+
     // reading mainfile lite by line and writing lines to LinkedList into file
     void readMainFile(String filepath) {
-        LinkedList<Word> listOfWords = new  LinkedList<Word>();
+        LinkedList<Word> listOfWords = new LinkedList<Word>();
         BufferedReader reader = null;
         BufferedWriter writer = null;
         try {
@@ -54,21 +55,21 @@ public class Word implements Serializable {
             String line = reader.readLine();
             String ew = "";
             String rw = "";
+            int positionOfi = 0;
             while (line != null) {
-
                 for (int i = 0; i < line.length(); i++) {
-                    if (line.charAt(i) != '#') ew = ew + line.charAt(i);
-                    else
-                        continue;
-                        rw = rw + line.charAt(i);
+                    if (line.charAt(i) == '#') {
+                        positionOfi = i;
+                    }
                 }
-
-
-               // System.out.println("english word is " + ew);
-               //  System.out.println("russion word is " + rw);
-
-
-
+                for (int i = 0; i < positionOfi; i++) {
+                    ew = ew + line.charAt(i);
+                }
+                for (int i = positionOfi + 1; i < line.length(); i++) {
+                    rw = rw + line.charAt(i);
+                }
+                System.out.println("english word is: " + ew);
+                System.out.println("russion word is: " + rw);
                 line = reader.readLine();
             }
             reader.close();
@@ -78,5 +79,4 @@ public class Word implements Serializable {
 
     }
 }
-
 
