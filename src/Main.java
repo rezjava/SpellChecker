@@ -1,12 +1,13 @@
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Main {
-    private static final String MAINFILE = "/home/neox/IdeaProjects/ActiveVocabulary/maintext";
-    private static final String FILE_1 = "/home/neox/IdeaProjects/ActiveVocabulary/list1";
-    private static final String FILE_2 = "/home/neox/IdeaProjects/ActiveVocabulary/src/list2";
-    private static final String FILE_3 = "/home/neox/IdeaProjects/ActiveVocabulary/src/list3";
+    private static final String MAINFILE = "/home/IdeaProjects/ActiveVocabulary/maintext";
+    private static final String FILE1 = "/home/IdeaProjects/ActiveVocabulary/list1";
+    private static final String FILE2 = "/home/IdeaProjects/ActiveVocabulary/list2";
+    private static final String FILE3 = "/home/IdeaProjects/ActiveVocabulary/list3";
 
     private static void showMenu() {
         System.out.println("|===========================|");
@@ -26,13 +27,21 @@ public class Main {
         return true;
     }
 
+    private static void createAllNeededFiles(String MAINFILE, String FILE1, String FILE2, String FILE3) {
+
+       
+
+    }
+
     public static void main(String[] args) throws IOException {
 
         char choice, ignore;
         label:
         for (; ; ) {
             Word obj = new Word();
-            obj.readMainFile(MAINFILE,FILE_1);
+            createAllNeededFiles(MAINFILE, FILE1, FILE2, FILE3);
+
+            obj.readMainFile(mainFile, file1);
 
             do {
                 showMenu();
@@ -53,14 +62,14 @@ public class Main {
                         do {
                             System.out.println("input new words...");
                             System.out.println("for queit press 'esc'");
-                           // list = obj.writeWordInLinkedList();
-                           // obj.writeWordInFile(list, FILE_1);
+                            // list = obj.writeWordInLinkedList();
+                            // obj.writeWordInFile(list, FILE_1);
                             key = System.in.read();
                         } while (key != 27);
                         break;
                     case '3':
                         System.out.println("show all words");
-                       // obj.readWordFromFile(FILE_1);
+                        // obj.readWordFromFile(FILE_1);
                         break;
                     case 'q':
                         System.out.println("quiet");

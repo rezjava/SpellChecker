@@ -50,7 +50,7 @@ public class Word implements Serializable {
     }
 
     // reading mainfile line by line and writing to LinkedList and to file
-    void readMainFile(String filepathForRead, String filepathForWrite) {
+    void readMainFile(File filepathForRead, File filepathForWrite) {
         LinkedList<Word> listOfWords = new LinkedList<Word>();
       //  BufferedReader reader = null;
         try {
