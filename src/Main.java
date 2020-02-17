@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Main {
-    private static final String MAINFILE = "/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext";
-    private static final String FILE_1 = "/home/ubuntu/IdeaProjects/ActiveVocabulary/list1";
-    private static final String FILE_2 = "/home/ubuntu/IdeaProjects/ActiveVocabulary/list2";
-    private static final String FILE_3 = "/home/ubuntu/IdeaProjects/ActiveVocabulary/list3";
+    private static final String MAINFILE = "/home/neox/IdeaProjects/ActiveVocabulary/maintext";
+    private static final String FILE_1 = "/home/neox/IdeaProjects/ActiveVocabulary/list1";
+    private static final String FILE_2 = "/home/neox/IdeaProjects/ActiveVocabulary/src/list2";
+    private static final String FILE_3 = "/home/neox/IdeaProjects/ActiveVocabulary/src/list3";
 
     private static void showMenu() {
         System.out.println("|===========================|");
@@ -32,7 +32,8 @@ public class Main {
         label:
         for (; ; ) {
             Word obj = new Word();
-            obj.readMainFile("/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext");
+            obj.readMainFile(MAINFILE,FILE_1);
+
             do {
                 showMenu();
                 System.out.print("input your choice: ");

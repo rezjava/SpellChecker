@@ -12,6 +12,11 @@ public class Word implements Serializable {
         this.priority = 0;
     }
 
+    Word(String englishWord, String russianWord) {
+        this.englishWord = englishWord;
+        this.russianWord = russianWord;
+    }
+
     public int getIdWord() {
         return idWord;
     }
@@ -44,18 +49,19 @@ public class Word implements Serializable {
         this.priority = priority;
     }
 
-    // reading mainfile lite by line and writing lines to LinkedList into file
-    void readMainFile(String filepath) {
+    // reading mainfile line by line and writing to LinkedList and to file
+    void readMainFile(String filepathForRead, String filepathForWrite) {
         LinkedList<Word> listOfWords = new LinkedList<Word>();
-        BufferedReader reader = null;
-        BufferedWriter writer = null;
+      //  BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader("/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext"));
-            writer = new BufferedWriter(new FileWriter("/home/ubuntu/IdeaProjects/ActiveVocabulary/list1"));
+            // reader = new BufferedReader(new InputStreamReader(filepathForRead),"UTF-8");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filepathForRead), "UTF8"));
+            ObjectOutputStream objstr = new ObjectOutputStream(new FileOutputStream(filepathForWrite));
             String line = reader.readLine();
             String ew = "";
             String rw = "";
             int positionOfi = 0;
+            int index = 0;
             while (line != null) {
                 for (int i = 0; i < line.length(); i++) {
                     if (line.charAt(i) == '#') {
@@ -68,15 +74,16 @@ public class Word implements Serializable {
                 for (int i = positionOfi + 1; i < line.length(); i++) {
                     rw = rw + line.charAt(i);
                 }
-                System.out.println("english word is: " + ew);
-                System.out.println("russion word is: " + rw);
+                Word objForWriting = new Word(ew, rw);
+                listOfWords.add(index++, objForWriting);
+                objstr.writeObject(listOfWords);
                 line = reader.readLine();
             }
             reader.close();
+            objstr.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
-
