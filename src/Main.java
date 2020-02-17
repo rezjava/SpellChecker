@@ -27,21 +27,16 @@ public class Main {
         return true;
     }
 
-    private static void createAllNeededFiles(String MAINFILE, String FILE1, String FILE2, String FILE3) {
-
-       
-
-    }
 
     public static void main(String[] args) throws IOException {
 
         char choice, ignore;
         label:
+
         for (; ; ) {
             Word obj = new Word();
-            createAllNeededFiles(MAINFILE, FILE1, FILE2, FILE3);
 
-            obj.readMainFile(mainFile, file1);
+            obj.readMainFile(MAINFILE,FILE1);
 
             do {
                 showMenu();
@@ -60,16 +55,13 @@ public class Main {
                     case '2':
                         int key;
                         do {
-                            System.out.println("input new words...");
                             System.out.println("for queit press 'esc'");
-                            // list = obj.writeWordInLinkedList();
-                            // obj.writeWordInFile(list, FILE_1);
                             key = System.in.read();
                         } while (key != 27);
                         break;
                     case '3':
                         System.out.println("show all words");
-                        // obj.readWordFromFile(FILE_1);
+                        obj.readFile1(FILE1);
                         break;
                     case 'q':
                         System.out.println("quiet");
