@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Main {
-    private static final String MAINFILE = "/home/IdeaProjects/ActiveVocabulary/maintext";
-    private static final String FILE1 = "/home/IdeaProjects/ActiveVocabulary/list1";
+    private static final String MAINFILE = "/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext";
+    private static final String FILE1 = "/home/ubuntu/IdeaProjects/ActiveVocabulary/list1";
     private static final String FILE2 = "/home/IdeaProjects/ActiveVocabulary/list2";
     private static final String FILE3 = "/home/IdeaProjects/ActiveVocabulary/list3";
 
@@ -38,6 +38,7 @@ public class Main {
 
             obj.readMainFile(MAINFILE,FILE1);
 
+            obj.readFile1(FILE1);
             do {
                 showMenu();
                 System.out.print("input your choice: ");

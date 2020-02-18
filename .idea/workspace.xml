@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bc18dc54-a22e-4c0e-9b67-b71ba17f1cfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ActiveVocabulary/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ActiveVocabulary/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list1" beforeDir="false" afterPath="$PROJECT_DIR$/list1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Word.java" afterDir="false" />
     </list>
@@ -97,41 +97,44 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1320" height="142" key="GridCell.Tab.0.bottom" timestamp="1581944089649">
+    <state width="1320" height="201" key="GridCell.Tab.0.bottom" timestamp="1582031695320">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="142" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1581944089649" />
-    <state width="1320" height="142" key="GridCell.Tab.0.center" timestamp="1581944089647">
+    <state width="1320" height="201" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582031695320" />
+    <state width="1320" height="201" key="GridCell.Tab.0.center" timestamp="1582031695318">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="142" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1581944089647" />
-    <state width="1320" height="142" key="GridCell.Tab.0.left" timestamp="1581944089647">
+    <state width="1320" height="201" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582031695318" />
+    <state width="1320" height="201" key="GridCell.Tab.0.left" timestamp="1582031695318">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="142" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1581944089647" />
-    <state width="1320" height="142" key="GridCell.Tab.0.right" timestamp="1581944089648">
+    <state width="1320" height="201" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582031695318" />
+    <state width="1320" height="201" key="GridCell.Tab.0.right" timestamp="1582031695319">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="142" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1581944089648" />
-    <state width="1320" height="250" key="GridCell.Tab.1.bottom" timestamp="1580739374085">
+    <state width="1320" height="201" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582031695319" />
+    <state width="1320" height="308" key="GridCell.Tab.1.bottom" timestamp="1582031688649">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="250" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1580739374085" />
-    <state width="1320" height="250" key="GridCell.Tab.1.center" timestamp="1580739374084">
+    <state width="1320" height="308" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582031688649" />
+    <state width="1320" height="308" key="GridCell.Tab.1.center" timestamp="1582031688648">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="250" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1580739374084" />
-    <state width="1320" height="250" key="GridCell.Tab.1.left" timestamp="1580739374083">
+    <state width="1320" height="308" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1582031688648" />
+    <state width="1320" height="308" key="GridCell.Tab.1.left" timestamp="1582031688647">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="250" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1580739374083" />
-    <state width="1320" height="250" key="GridCell.Tab.1.right" timestamp="1580739374084">
+    <state width="1320" height="308" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1582031688647" />
+    <state width="1320" height="308" key="GridCell.Tab.1.right" timestamp="1582031688648">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="250" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1580739374084" />
+    <state width="1320" height="308" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1582031688648" />
     <state x="166" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1580890569317">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="166" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1580890569317" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ActiveVocabulary$Main.ic" NAME="Main Coverage Results" MODIFIED="1582030418325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

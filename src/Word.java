@@ -50,19 +50,20 @@ public class Word implements Serializable {
     }
 
     // reading mainfile line by line and writing to LinkedList and to file
-  public void readMainFile(String filepathForRead, String filepathForWrite) {
+    public void readMainFile(String filepathForRead, String filepathForWrite) {
         LinkedList<Word> listOfWords = new LinkedList<Word>();
-      //  BufferedReader reader = null;
+        //  BufferedReader reader = null;
         try {
             // reader = new BufferedReader(new InputStreamReader(filepathForRead),"UTF-8");
             BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filepathForRead), "UTF8"));
             ObjectOutputStream objstr = new ObjectOutputStream(new FileOutputStream(filepathForWrite));
             String line = reader.readLine();
-            String ew = "";
-            String rw = "";
+
             int positionOfi = 0;
             int index = 0;
             while (line != null) {
+                String ew = "";
+                String rw = "";
                 for (int i = 0; i < line.length(); i++) {
                     if (line.charAt(i) == '#') {
                         positionOfi = i;
@@ -86,20 +87,20 @@ public class Word implements Serializable {
             e.printStackTrace();
         }
     }
-   public void readFile1(String filename){
-      try{
-          FileInputStream fis = new FileInputStream("filename");
-         ObjectInputStream ois = new ObjectInputStream(fis);
-          while (true) {
-              Object obj;
 
-                  obj = ois.readObject();
-              System.out.println(obj.toString());
-          }
-      } catch (FileNotFoundException e) {
-          e.printStackTrace();
-      } catch (IOException | ClassNotFoundException e) {
-          e.printStackTrace();
-      }
-   }
+    public void readFile1(String filename) {
+        try {
+            FileInputStream fis = new FileInputStream(filename);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            while (true) {
+                Object obj;
+                obj = ois.readObject();
+                System.out.println(obj.toString());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }
