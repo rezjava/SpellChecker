@@ -28,7 +28,7 @@ public class Main {
     }
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, NoSuchFieldException {
 
         char choice, ignore;
         label:
@@ -47,18 +47,12 @@ public class Main {
                     ignore = (char) System.in.read();
                 } while (ignore != '\n');
 
-                LinkedList list = null;
-
                 switch (choice) {
                     case '1':
                         System.out.println("start learning words");
                         break;
                     case '2':
-                        int key;
-                        do {
-                            System.out.println("for queit press 'esc'");
-                            key = System.in.read();
-                        } while (key != 27);
+
                         break;
                     case '3':
                         System.out.println("show all words");

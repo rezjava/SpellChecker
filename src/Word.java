@@ -52,10 +52,10 @@ public class Word implements Serializable {
     // reading mainfile line by line and writing to LinkedList and to file
     public void readMainFile(String filepathForRead, String filepathForWrite) {
         LinkedList<Word> listOfWords = new LinkedList<Word>();
-        //  BufferedReader reader = null;
+        //BufferedReader reader = null;
         try {
             // reader = new BufferedReader(new InputStreamReader(filepathForRead),"UTF-8");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filepathForRead), "UTF8"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filepathForRead), "UTF-8"));
             ObjectOutputStream objstr = new ObjectOutputStream(new FileOutputStream(filepathForWrite));
             String line = reader.readLine();
 
@@ -64,15 +64,16 @@ public class Word implements Serializable {
             while (line != null) {
                 String ew = "";
                 String rw = "";
-                for (int i = 0; i < line.length(); i++) {
+                for (int i = 0; i < line.length() - 1; i++) {
                     if (line.charAt(i) == '#') {
                         positionOfi = i;
+                        break;
                     }
                 }
-                for (int i = 0; i < positionOfi; i++) {
+                for (int i = 0; i < positionOfi - 1; i++) {
                     ew = ew + line.charAt(i);
                 }
-                for (int i = positionOfi + 1; i < line.length(); i++) {
+                for (int i = positionOfi + 2; i < line.length() - 1; i++) {
                     rw = rw + line.charAt(i);
                 }
                 Word objForWriting = new Word(ew, rw);
@@ -88,19 +89,28 @@ public class Word implements Serializable {
         }
     }
 
-    public void readFile1(String filename) {
+    public void readFile1(String filename) throws NoSuchFieldException {
+        while (true) {
+            Object st = readObjectFromFile(filename);
+
+        }
+    }
+
+    public Object readObjectFromFile(String filepath) {
         try {
-            FileInputStream fis = new FileInputStream(filename);
-            ObjectInputStream ois = new ObjectInputStream(fis);
-            while (true) {
-                Object obj;
-                obj = ois.readObject();
-                System.out.println(obj.toString());
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
+
+            FileInputStream fileIn = new FileInputStream(filepath);
+            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
+
+            Object obj = objectIn.readObject();
+
+            System.out.println("The Object has been read from the file");
+            objectIn.close();
+            return obj;
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
         }
     }
 }
