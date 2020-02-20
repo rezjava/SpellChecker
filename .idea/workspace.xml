@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc18dc54-a22e-4c0e-9b67-b71ba17f1cfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ReadingOfList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list1" beforeDir="false" afterPath="$PROJECT_DIR$/list1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,9 @@
     <option name="height" value="772" />
   </component>
   <component name="ProjectId" id="1X9oahMXbJESsTLrIEnhyPu0ldM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -98,22 +103,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="595" y="102" width="166" height="597" key="#xdebugger.XInspectDialog/0.27.1366.741@0.27.1366.741" timestamp="1582105966344" />
-    <state width="1320" height="242" key="GridCell.Tab.0.bottom" timestamp="1582193238887">
+    <state width="1320" height="242" key="GridCell.Tab.0.bottom" timestamp="1582199304143">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="242" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582193238887" />
-    <state width="1320" height="242" key="GridCell.Tab.0.center" timestamp="1582193238886">
+    <state width="1320" height="242" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582199304143" />
+    <state width="1320" height="242" key="GridCell.Tab.0.center" timestamp="1582199304142">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="242" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582193238886" />
-    <state width="1320" height="242" key="GridCell.Tab.0.left" timestamp="1582193238880">
+    <state width="1320" height="242" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582199304142" />
+    <state width="1320" height="242" key="GridCell.Tab.0.left" timestamp="1582199304141">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="242" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582193238880" />
-    <state width="1320" height="242" key="GridCell.Tab.0.right" timestamp="1582193238886">
+    <state width="1320" height="242" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582199304141" />
+    <state width="1320" height="242" key="GridCell.Tab.0.right" timestamp="1582199304142">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="242" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582193238886" />
+    <state width="1320" height="242" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582199304142" />
     <state width="1320" height="297" key="GridCell.Tab.1.bottom" timestamp="1582120773541">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
