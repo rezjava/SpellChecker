@@ -3,9 +3,9 @@ import java.util.LinkedList;
 
 public class Word implements Serializable {
     private int idWord;         //for counting words
+    private int priority;       //for counting current amount of mistakes in this word
     private String englishWord;
     private String russianWord;
-    private int priority;       //for counting current amount of mistakes in this word
 
     Word() {
         this.priority = 0;
@@ -47,9 +47,6 @@ public class Word implements Serializable {
     public void setPriority(int priority) {
         this.priority = priority;
     }
-    public String toStrind() {
-        return new StringBuffer("English Word: ").append(this.englishWord).append("Russion Word: ").append(this.russianWord).toString();
-    }
 
     // reading "mainfile" line by line and writing to another file "file1" as LinkedList<Word>
     public void readMainFile(String filepathForRead, String filepathForWrite) {
@@ -88,28 +85,5 @@ public class Word implements Serializable {
         }
     }
 
-    public void readFile1(String filepath) {
-        try {
-            FileInputStream fis = new FileInputStream(filepath);
-            LinkedList<Word> objectList = new LinkedList<>();
-            boolean cont = true;
-            while (cont){
-                try (ObjectInputStream input = new ObjectInputStream(fis)) {
-                    Object obj = input.readObject();
-                    if (obj != null) {
-                        objectList.add((Word) obj);
-                    } else {
-                        cont = false;
-                    }
-                }
-            }
-            for (Word k : objectList) {
-                System.out.println(k.englishWord+k.russianWord);
 
-            }
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
 }

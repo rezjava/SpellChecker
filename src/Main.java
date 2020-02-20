@@ -33,8 +33,11 @@ public class Main {
         label:
         {
             Word obj = new Word();
+            ReadingOfList readingOfList = new ReadingOfList();
+            Spelling spelling = new Spelling();
+
             obj.readMainFile(MAINFILE, FILE1);
-            obj.readFile1(FILE1);
+            readingOfList.readFile1(FILE1);
             do {
                 showMenu();
                 System.out.print("input your choice: ");
