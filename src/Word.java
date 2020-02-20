@@ -1,12 +1,11 @@
 import java.io.*;
 import java.util.LinkedList;
-import java.util.Scanner;
 
 public class Word implements Serializable {
-    private int idWord;         //jast for counting words
+    private int idWord;         //for counting words
     private String englishWord;
     private String russianWord;
-    private int priority;       //it's a current amount of mistakes in this word
+    private int priority;       //for counting current amount of mistakes in this word
 
     Word() {
         this.priority = 0;
@@ -48,17 +47,17 @@ public class Word implements Serializable {
     public void setPriority(int priority) {
         this.priority = priority;
     }
+    public String toStrind() {
+        return new StringBuffer("English Word: ").append(this.englishWord).append("Russion Word: ").append(this.russianWord).toString();
+    }
 
-    // reading mainfile line by line and writing to LinkedList and to file
+    // reading "mainfile" line by line and writing to another file "file1" as LinkedList<Word>
     public void readMainFile(String filepathForRead, String filepathForWrite) {
         LinkedList<Word> listOfWords = new LinkedList<Word>();
-        //BufferedReader reader = null;
         try {
-            // reader = new BufferedReader(new InputStreamReader(filepathForRead),"UTF-8");
             BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filepathForRead), "UTF-8"));
             ObjectOutputStream objstr = new ObjectOutputStream(new FileOutputStream(filepathForWrite));
             String line = reader.readLine();
-
             int positionOfi = 0;
             int index = 0;
             while (line != null) {
@@ -89,28 +88,28 @@ public class Word implements Serializable {
         }
     }
 
-    public void readFile1(String filename) throws NoSuchFieldException {
-        while (true) {
-            Object st = readObjectFromFile(filename);
-
-        }
-    }
-
-    public Object readObjectFromFile(String filepath) {
+    public void readFile1(String filepath) {
         try {
+            FileInputStream fis = new FileInputStream(filepath);
+            LinkedList<Word> objectList = new LinkedList<>();
+            boolean cont = true;
+            while (cont){
+                try (ObjectInputStream input = new ObjectInputStream(fis)) {
+                    Object obj = input.readObject();
+                    if (obj != null) {
+                        objectList.add((Word) obj);
+                    } else {
+                        cont = false;
+                    }
+                }
+            }
+            for (Word k : objectList) {
+                System.out.println(k.englishWord+k.russianWord);
 
-            FileInputStream fileIn = new FileInputStream(filepath);
-            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
-
-            Object obj = objectIn.readObject();
-
-            System.out.println("The Object has been read from the file");
-            objectIn.close();
-            return obj;
+            }
 
         } catch (Exception ex) {
             ex.printStackTrace();
-            return null;
         }
     }
 }

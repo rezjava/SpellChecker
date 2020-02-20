@@ -14,16 +14,15 @@ public class Main {
         System.out.println("|     MENU SELECTION        |");
         System.out.println("|===========================|");
         System.out.println("|     Options:              |");
-        System.out.println("|  1. start learning        |");
-        System.out.println("|  2. input new words       |");
-        System.out.println("|  3. show all words        |");
+        System.out.println("|  1. reading of the list   |");
+        System.out.println("|  2. spelling of the words |");
         System.out.println("| 'q' exit from program     |");
         System.out.println("|===========================|");
         System.out.println("*****************************");
     }
 
     private static boolean isChoiceValid(int ch) {
-        if (ch < '1' | ch > '4' & ch != 'q') return false;
+        if (ch < '1' | ch > '3' & ch != 'q') return false;
         return true;
     }
 
@@ -32,12 +31,9 @@ public class Main {
 
         char choice, ignore;
         label:
-
-        for (; ; ) {
+        {
             Word obj = new Word();
-
-            obj.readMainFile(MAINFILE,FILE1);
-
+            obj.readMainFile(MAINFILE, FILE1);
             obj.readFile1(FILE1);
             do {
                 showMenu();
@@ -49,14 +45,10 @@ public class Main {
 
                 switch (choice) {
                     case '1':
-                        System.out.println("start learning words");
+                        System.out.println("reading of the list all words");
                         break;
                     case '2':
-
-                        break;
-                    case '3':
-                        System.out.println("show all words");
-                        obj.readFile1(FILE1);
+                        System.out.println("spelling of the words");
                         break;
                     case 'q':
                         System.out.println("quiet");
