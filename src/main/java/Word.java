@@ -7,11 +7,12 @@ public class Word implements Serializable {
     private String englishWord;
     private String russianWord;
 
-    Word() {
-        this.priority = 0;
+   public Word(){
     }
 
-    Word(String englishWord, String russianWord) {
+   public Word(int id,int priority,String englishWord, String russianWord) {
+        this.idWord = id;
+        this.priority = priority;
         this.englishWord = englishWord;
         this.russianWord = russianWord;
     }
@@ -57,6 +58,7 @@ public class Word implements Serializable {
             String line = reader.readLine();
             int positionOfi = 0;
             int index = 0;
+            int countOfWord = 0;
             while (line != null) {
                 String ew = "";
                 String rw = "";
@@ -72,9 +74,10 @@ public class Word implements Serializable {
                 for (int i = positionOfi + 2; i < line.length() - 1; i++) {
                     rw = rw + line.charAt(i);
                 }
-                Word objForWriting = new Word(ew, rw);
+                Word objForWriting = new Word(countOfWord,0,ew, rw);
                 listOfWords.add(index++, objForWriting);
                 objstr.writeObject(listOfWords);
+                countOfWord++;
                 line = reader.readLine();
             }
             reader.close();
