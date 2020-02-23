@@ -1,7 +1,4 @@
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class Main {
     private static final String MAINFILE = "/home/ubuntu/IdeaProjects/ActiveVocabulary/maintext";
@@ -18,11 +15,12 @@ public class Main {
         label:
         {
             Word obj = new Word();
-            ReadingOfList readingOfList = new ReadingOfList();
+            ReadingOfFile readingOfList = new ReadingOfFile();
             Spelling spelling = new Spelling();
             Menu menu = new Menu();
-            obj.readMainFile(MAINFILE, FILE1);
-            readingOfList.readFile1(FILE1);
+            ReadingOfFile reading = new ReadingOfFile();
+            reading.readMainFile(MAINFILE, FILE1);
+            reading.readFile1(FILE1);
             char choice;
             do {
                 menu.showMenu();

@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ActiveVocabulary" target="1.5" />
+      <module name="ActiveVocabulary" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
