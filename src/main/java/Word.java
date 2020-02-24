@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.LinkedList;
 
 public class Word implements Serializable {
     private int idWord;         //for counting words
