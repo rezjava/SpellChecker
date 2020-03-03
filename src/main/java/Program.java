@@ -6,6 +6,9 @@ public class Program {
     private static final String WORK_FILE = "/home/ubuntu/IdeaProjects/ActiveVocabulary/workfile.txt";
 
     public static void main(String[] args) throws IOException, NoSuchFieldException {
+
+        if (isFileExists(args[0]))
+            System.out.println("You have to input ");
         Program mainObject = new Program();
         mainObject.run();
     }
@@ -15,35 +18,39 @@ public class Program {
         return true;
     }
 
-    private boolean isFileExists(String filename) {
-        File temp;
+    private static boolean isFileExists(String filename) {
+        File chack;
         try {
-            temp = File.createTempFile("/home/ubuntu/IdeaProjects/ActiveVocabulary/mainfile.txt", ".txt");
+            chack = File.createTempFile("/home/ubuntu/IdeaProjects/ActiveVocabulary/mainfile.txt", ".txt");
 
-            boolean exists = temp.exists();
+            boolean exists = chack.exists();
             if (exists) return true;
             else {
-                System.out.println("file doesn't exists : ");
+                System.out.println("Vocabulary file doesn't exists");
             }
-            return false;
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        private void run () throws IOException {
-            Word obj = new Word();
-            ReadingOfFile readingOfList = new ReadingOfFile();
-            Spelling spelling = new Spelling();
-            Menu menu = new Menu();
-            ReadingOfFile reading = new ReadingOfFile();
-            reading.readMainFile(MAIN_FILE, WORK_FILE);
-            reading.readFile1(WORK_FILE);
-            char choice;
-            do {
-                menu.showMenu();
-                choice = menu.takeChoise();
-            } while (!isChoiceValid(choice));
-        }
+        return false;
     }
+
+    private void run() throws IOException {
+
+
+        Word obj = new Word();
+        ReadingOfFile readingOfList = new ReadingOfFile();
+        Spelling spelling = new Spelling();
+        Menu menu = new Menu();
+        ReadingOfFile reading = new ReadingOfFile();
+        reading.readMainFile(MAIN_FILE, WORK_FILE);
+        reading.readFile1(WORK_FILE);
+        char choice;
+        do {
+            menu.showMenu();
+            choice = menu.takeChoise();
+        } while (!isChoiceValid(choice));
+    }
+}
 
 

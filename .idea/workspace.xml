@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc18dc54-a22e-4c0e-9b67-b71ba17f1cfe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list1" beforeDir="false" afterPath="$PROJECT_DIR$/workfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/list3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintext" beforeDir="false" afterPath="$PROJECT_DIR$/mainfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EncoderDecoderJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EncoderDecoderJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Spelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Spelling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
