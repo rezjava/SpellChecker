@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 public class ReadingOfFile {
 
-    // reading "mainfile" line by line and writing to another file "file1" as LinkedList<Word>
+    // reading "mainfile.txt" line by line and writing to another file "file1" as LinkedList<Word>
     public void readMainFile(String filepathForRead, String filepathForWrite) {
         LinkedList<String> listOfWords = new LinkedList<String>();
         try {

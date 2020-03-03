@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bc18dc54-a22e-4c0e-9b67-b71ba17f1cfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list1" beforeDir="false" afterPath="$PROJECT_DIR$/list1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ActiveVocabulary/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ActiveVocabulary/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ActiveVocabulary/ReadingOfList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ActiveVocabulary/Spelling.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ActiveVocabulary/Word.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/list1" beforeDir="false" afterPath="$PROJECT_DIR$/workfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/list3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maintext" beforeDir="false" afterPath="$PROJECT_DIR$/mainfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EncoderDecoderJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EncoderDecoderJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReadingOfFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadingOfFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Spelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Spelling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="UML Class" />
+        <option value="UML Use Case" />
       </list>
     </option>
   </component>
@@ -50,12 +52,6 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="57" />
-    <option name="y" value="-4" />
-    <option name="width" value="1309" />
-    <option name="height" value="772" />
-  </component>
   <component name="ProjectId" id="1X9oahMXbJESsTLrIEnhyPu0ldM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -68,14 +64,15 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Use Case" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,8 +80,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="ActiveVocabulary" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,7 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>
   </component>
@@ -149,42 +146,50 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="461" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1582538160046" />
-    <state width="1320" height="321" key="GridCell.Tab.0.bottom" timestamp="1582546526407">
+    <state width="1320" height="321" key="GridCell.Tab.0.bottom" timestamp="1582879675981">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="321" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582546526407" />
-    <state width="1320" height="321" key="GridCell.Tab.0.center" timestamp="1582546526406">
+    <state width="1320" height="321" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582879675981" />
+    <state width="1320" height="321" key="GridCell.Tab.0.center" timestamp="1582879675980">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="321" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582546526406" />
-    <state width="1320" height="321" key="GridCell.Tab.0.left" timestamp="1582546526406">
+    <state width="1320" height="321" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582879675980" />
+    <state width="1320" height="321" key="GridCell.Tab.0.left" timestamp="1582879675979">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="321" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582546526406" />
-    <state width="1320" height="321" key="GridCell.Tab.0.right" timestamp="1582546526406">
+    <state width="1320" height="321" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582879675979" />
+    <state width="1320" height="321" key="GridCell.Tab.0.right" timestamp="1582879675981">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="321" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582546526406" />
-    <state width="1320" height="297" key="GridCell.Tab.1.bottom" timestamp="1582120773541">
+    <state width="1320" height="321" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582879675981" />
+    <state width="1320" height="250" key="GridCell.Tab.1.bottom" timestamp="1582546684149">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="297" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582120773541" />
-    <state width="1320" height="297" key="GridCell.Tab.1.center" timestamp="1582120773540">
+    <state width="1320" height="250" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582546684149" />
+    <state width="1320" height="250" key="GridCell.Tab.1.center" timestamp="1582546684148">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="297" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1582120773540" />
-    <state width="1320" height="297" key="GridCell.Tab.1.left" timestamp="1582120773540">
+    <state width="1320" height="250" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1582546684148" />
+    <state width="1320" height="250" key="GridCell.Tab.1.left" timestamp="1582546684148">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="297" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1582120773540" />
-    <state width="1320" height="297" key="GridCell.Tab.1.right" timestamp="1582120773541">
+    <state width="1320" height="250" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1582546684148" />
+    <state width="1320" height="250" key="GridCell.Tab.1.right" timestamp="1582546684149">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="297" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1582120773541" />
-    <state x="166" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1582544165556">
+    <state width="1320" height="250" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1582546684149" />
+    <state x="278" y="59" width="800" height="684" key="PlantUMLSettings" timestamp="1582887040312">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="166" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1582544165556" />
+    <state x="278" y="59" width="800" height="684" key="PlantUMLSettings/0.27.1366.741@0.27.1366.741" timestamp="1582887040312" />
+    <state x="166" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1582886100122">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="166" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1582886100122" />
+    <state x="412" y="146" width="540" height="524" key="StructurePopup" timestamp="1582883643068">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="412" y="146" width="540" height="524" key="StructurePopup/0.27.1366.741@0.27.1366.741" timestamp="1582883643068" />
     <state x="101" y="85" width="1189" height="622" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582103832831">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

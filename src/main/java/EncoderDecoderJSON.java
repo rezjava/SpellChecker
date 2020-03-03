@@ -11,3 +11,10 @@ public class EncoderDecoderJSON {
 
     }
 }
+/*
+@startuml
++encoderToJSON
++decoderToJSON
+
+@enduml
+*/

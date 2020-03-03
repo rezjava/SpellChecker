@@ -29,7 +29,7 @@ public class Menu {
                 System.out.println("spelling of the words");
                 break;
             case 'q':
-                System.out.println("quiet");
+                System.out.println("goodbye!");
                 choice = 'q';
                 break;
         }
