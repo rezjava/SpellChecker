@@ -5,14 +5,14 @@ public class Program {
     private static final String WORK_FILE = "/home/workfile.txt";
 
     public static void main(String[] args) throws IOException, NoSuchFieldException {
-        final String mainFile = args[0];
+        final String MAIN_FILE = args[0];
         Program mainObject = new Program();
-        if (isFileExists(args[0])) {
-            if (isFileExists(WORK_FILE)) {
-                mainObject.run(mainFile);
+        if (isFileExists(args[0])) {         //if MAIN_FILE exists
+            if (isFileExists(WORK_FILE)) {   //if WORK_FILE exists
+                mainObject.run(MAIN_FILE);
             } else {
-                File file = new File("/home/workfile.txt");
-                mainObject.run(mainFile);
+                File file = new File("/home/workfile.txt"); // create WORK_FILE
+                mainObject.run(MAIN_FILE);
             }
         } else
             System.out.println("You have to create your Vocabulary file and input it as parameter of program");
@@ -48,7 +48,7 @@ public class Program {
         Menu menu = new Menu();
         ReadingOfFile reading = new ReadingOfFile();
         reading.readMainFile(mainFile, WORK_FILE);
-        reading.readFile1(WORK_FILE);
+        reading.readWorkFile(WORK_FILE);
         char choice;
         do {
             menu.showMenu();

@@ -44,7 +44,7 @@ public class ReadingOfFile {
         }
     }
 
-    public void readFile1(String filepath) {
+    public void readWorkFile(String filepath) {
         try {
             FileInputStream fis = new FileInputStream(filepath);
             LinkedList<String> objectList = new LinkedList<String>();
